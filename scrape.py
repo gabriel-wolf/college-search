@@ -1,22 +1,42 @@
 
+import urllib
+from bs4 import BeautifulSoup
+import requests
+import webbrowser
+
+
 sitemit='https://www.niche.com/colleges/massachusetts-institute-of-technology/'
+
+
+namesdict = {
+    "massachusetts institute of technology": ["mit"],
+    "brown univeristy": ["brown"],
+    "harvard university": ['harvard']
+    }
+
+
 
 def inputget():
     uinput=input("Enter College: ")
 
-    if uinput == "mit":
-        uinput = 'massachusetts institute of technology'
-    if uinput == "brown":
-        uinput = 'brown university'
-    elif uinput == "STOP":
+    for keys,values in namesdict.items():
+        i = 0
+        while i < len(values):
+            if (uinput == values[i]):
+                uinput = keys
+                print(keys)
+            i += 1
+
+
+    if uinput == "STOP":
         exit(0)
 
     uinput = uinput.replace(' ','-')
 
     site='https://www.niche.com/colleges/' + uinput + '/'
 
-    print(site)
-    return site
+    print([uinput, site])
+    return [uinput, site]
 
 
 
@@ -31,7 +51,8 @@ browser.set_window_size(1120, 550)
 
 
 while True:
-    browser.get(inputget())
+    inputu = inputget()
+    browser.get(inputu[1])
     browser.save_screenshot('college-page.png')
 
     html = browser.page_source
@@ -40,7 +61,7 @@ while True:
 
     # print(soup.prettify)
 
-    print("\n\n")
+    print("\n")
 
     title = soup.find(class_="postcard__title").get_text()
     print(title)
@@ -67,6 +88,27 @@ while True:
     print("Most popular major: " + str(browser.find_element_by_xpath(
         "/html/body/div/div/section/main/div/div[2]/div/div[2]/section[9]/div[2]/div[1]/div/div/div/div[2]/ul/li[1]/div/h6"
     ).text))
+
+
+    print("\n\n")
+
+    text = str(inputu[0])
+
+    text = urllib.parse.quote_plus(text)
+
+    url = 'https://google.com/search?q=' + text
+
+    response = requests.get(url)
+
+    #with open('output.html', 'wb') as f:
+    #    f.write(response.content)
+    #webbrowser.open('output.html')
+
+    soup = BeautifulSoup(response.text, 'lxml')
+    for g in soup.find_all(class_='g'):
+        print(g.text[:700])
+        print('-----')
+
 
 
 

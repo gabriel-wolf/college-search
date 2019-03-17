@@ -1,47 +1,26 @@
-[INFO  - 2019-02-03T17:24:10.912Z] GhostDriver - Main - running on port 60060
-[INFO  - 2019-02-03T17:24:13.092Z] Session [86481180-27d8-11e9-8ce7-c3474a9cb43a] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
-[INFO  - 2019-02-03T17:24:13.092Z] Session [86481180-27d8-11e9-8ce7-c3474a9cb43a] - page.customHeaders:  - {}
-[INFO  - 2019-02-03T17:24:13.092Z] Session [86481180-27d8-11e9-8ce7-c3474a9cb43a] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
-[INFO  - 2019-02-03T17:24:13.092Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 86481180-27d8-11e9-8ce7-c3474a9cb43a
-[ERROR - 2019-02-03T17:24:46.586Z] Session [86481180-27d8-11e9-8ce7-c3474a9cb43a] - page.onError - msg: ReferenceError: Can't find variable: Set
+[INFO  - 2019-02-08T15:45:18.627Z] GhostDriver - Main - running on port 60438
+[INFO  - 2019-02-08T15:45:22.553Z] Session [8b768d10-2bb8-11e9-98a5-f3b9f8d13203] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2019-02-08T15:45:22.554Z] Session [8b768d10-2bb8-11e9-98a5-f3b9f8d13203] - page.customHeaders:  - {}
+[INFO  - 2019-02-08T15:45:22.554Z] Session [8b768d10-2bb8-11e9-98a5-f3b9f8d13203] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2019-02-08T15:45:22.555Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 8b768d10-2bb8-11e9-98a5-f3b9f8d13203
+[ERROR - 2019-02-08T15:45:33.525Z] Session [8b768d10-2bb8-11e9-98a5-f3b9f8d13203] - page.onError - msg: ReferenceError: Can't find variable: Set
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-03T17:24:46.587Z] Session [86481180-27d8-11e9-8ce7-c3474a9cb43a] - page.onError - stack:
+[ERROR - 2019-02-08T15:45:33.527Z] Session [8b768d10-2bb8-11e9-98a5-f3b9f8d13203] - page.onError - stack:
   (anonymous function) (https://unpkg.com/react-dom@16.1.1/umd/react-dom.production.min.js:124)
   (anonymous function) (https://unpkg.com/react-dom@16.1.1/umd/react-dom.production.min.js:12)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-03T17:24:47.267Z] Session [86481180-27d8-11e9-8ce7-c3474a9cb43a] - page.onError - msg: ReferenceError: Can't find variable: ReactDOM
+[ERROR - 2019-02-08T15:45:33.679Z] Session [8b768d10-2bb8-11e9-98a5-f3b9f8d13203] - page.onError - msg: ReferenceError: Can't find variable: ReactDOM
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-03T17:24:47.267Z] Session [86481180-27d8-11e9-8ce7-c3474a9cb43a] - page.onError - stack:
-  (anonymous function) (https://d33a4decm84gsn.cloudfront.net/production/191/bundle.client.cdef620ee6bc36ef9bcc.js:1)
-  e (https://d33a4decm84gsn.cloudfront.net/production/191/bundle.vendor.cdef620ee6bc36ef9bcc.js:1)
-  (anonymous function) (https://d33a4decm84gsn.cloudfront.net/production/191/bundle.client.cdef620ee6bc36ef9bcc.js:1)
-  e (https://d33a4decm84gsn.cloudfront.net/production/191/bundle.vendor.cdef620ee6bc36ef9bcc.js:1)
-  (anonymous function) (https://d33a4decm84gsn.cloudfront.net/production/191/bundle.client.cdef620ee6bc36ef9bcc.js:1)
-  e (https://d33a4decm84gsn.cloudfront.net/production/191/bundle.vendor.cdef620ee6bc36ef9bcc.js:1)
-  webpackJsonp (https://d33a4decm84gsn.cloudfront.net/production/191/bundle.vendor.cdef620ee6bc36ef9bcc.js:1)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-03T17:25:56.746Z] Session [86481180-27d8-11e9-8ce7-c3474a9cb43a] - page.onError - msg: ReferenceError: Can't find variable: Set
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-03T17:25:56.746Z] Session [86481180-27d8-11e9-8ce7-c3474a9cb43a] - page.onError - stack:
-  (anonymous function) (https://unpkg.com/react-dom@16.1.1/umd/react-dom.production.min.js:124)
-  (anonymous function) (https://unpkg.com/react-dom@16.1.1/umd/react-dom.production.min.js:12)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-03T17:25:56.974Z] Session [86481180-27d8-11e9-8ce7-c3474a9cb43a] - page.onError - msg: ReferenceError: Can't find variable: ReactDOM
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-03T17:25:56.975Z] Session [86481180-27d8-11e9-8ce7-c3474a9cb43a] - page.onError - stack:
-  (anonymous function) (https://d33a4decm84gsn.cloudfront.net/production/191/bundle.client.cdef620ee6bc36ef9bcc.js:1)
-  e (https://d33a4decm84gsn.cloudfront.net/production/191/bundle.vendor.cdef620ee6bc36ef9bcc.js:1)
-  (anonymous function) (https://d33a4decm84gsn.cloudfront.net/production/191/bundle.client.cdef620ee6bc36ef9bcc.js:1)
-  e (https://d33a4decm84gsn.cloudfront.net/production/191/bundle.vendor.cdef620ee6bc36ef9bcc.js:1)
-  (anonymous function) (https://d33a4decm84gsn.cloudfront.net/production/191/bundle.client.cdef620ee6bc36ef9bcc.js:1)
-  e (https://d33a4decm84gsn.cloudfront.net/production/191/bundle.vendor.cdef620ee6bc36ef9bcc.js:1)
-  webpackJsonp (https://d33a4decm84gsn.cloudfront.net/production/191/bundle.vendor.cdef620ee6bc36ef9bcc.js:1)
+[ERROR - 2019-02-08T15:45:33.679Z] Session [8b768d10-2bb8-11e9-98a5-f3b9f8d13203] - page.onError - stack:
+  (anonymous function) (https://d33a4decm84gsn.cloudfront.net/production/193/bundle.client.bc459b61338a822b543c.js:1)
+  e (https://d33a4decm84gsn.cloudfront.net/production/193/bundle.vendor.bc459b61338a822b543c.js:1)
+  (anonymous function) (https://d33a4decm84gsn.cloudfront.net/production/193/bundle.client.bc459b61338a822b543c.js:1)
+  e (https://d33a4decm84gsn.cloudfront.net/production/193/bundle.vendor.bc459b61338a822b543c.js:1)
+  (anonymous function) (https://d33a4decm84gsn.cloudfront.net/production/193/bundle.client.bc459b61338a822b543c.js:1)
+  e (https://d33a4decm84gsn.cloudfront.net/production/193/bundle.vendor.bc459b61338a822b543c.js:1)
+  webpackJsonp (https://d33a4decm84gsn.cloudfront.net/production/193/bundle.vendor.bc459b61338a822b543c.js:1)
 
   phantomjs://platform/console++.js:263 in error
